@@ -66,18 +66,6 @@ USES OF DESCRIPTIVE ACTIVITIES NAME TO NAME THE VARIABLES
 # Read the labels for the activities
 activitylabels<-read.table("activity_labels.txt", header=F, sep=" ")
 
-# Check the structure
-head(activitylabels)
-##   M1                 M2
-## 1  1            JUMPING
-## 2  2            DANCING
-## 3  3            RUNNING
-## 4  4            WALKING
-## 5  5            FITTING
-## 6  6            PLAYINY
-## 7  7            WRITTING
-## 8  8            DRIVING
-# Create column names for activity labels
 colnames(activitylabels)<- c("activityid","activity")
 
 # Add the activity label to the dataset using a merge on activityid
