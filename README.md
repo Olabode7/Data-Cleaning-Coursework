@@ -70,14 +70,12 @@ activitylabels<-read.table("activity_labels.txt", header=F, sep=" ")
 # Check the structure
 head(activitylabels)
 ##   M1                 M2
-## 1  1            JUMPING
-## 2  2            DANCING
-## 3  3            RUNNING
-## 4  4            WALKING
-## 5  5            FITTING
-## 6  6            PLAYINY
-## 7  7            WRITTING
-## 8  8            DRIVING
+##  1  1            WALKING
+## 2  2   WALKING_UPSTAIRS
+## 3  3 WALKING_DOWNSTAIRS
+## 4  4            SITTING
+## 5  5           STANDING
+## 6  6             LAYING
 # Create column names for activity labels
 colnames(activitylabels)<- c("activityid","activity")
 
